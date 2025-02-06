@@ -30,6 +30,8 @@ function loadItem() {
 
     tasksContainer.innerHTML = "";
 
+    document.getElementbyId("todo").reset();
+
 
 
     const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
