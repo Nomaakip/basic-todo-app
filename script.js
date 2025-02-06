@@ -21,10 +21,22 @@ function loadItem() {
         const tasksText = `<div id="atask">TODO
        <h2>${task.desc}</h2>
        <br>
+       <button onclick="removeTask(${index})">remove</button>
        </div>`;
        taskElement.innerHTML = tasksText;
         tasksContainer.appendChild(taskElement);
     });
+}
+
+
+function removeTask(index) {
+       let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+        tasks.splice(index, 1);
+
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+  
+  loadItem();
 }
 
 loadItem();
