@@ -30,7 +30,7 @@ function loadItem() {
 
     tasksContainer.innerHTML = "";
 
-    document.getElementbyId("todo").reset();
+    document.getElementbyId("todo").innerHTML = "";
 
 
 
