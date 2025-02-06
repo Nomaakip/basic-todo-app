@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;0,900;1,800;1,900&display=swap');
+        * {
+            font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 5px;
+        }
+
+        #atask {
+            background: #535353;
+            box-shadow: 0px 0px 10px #141414a6;
+            border-radius: 8px;
+            color: white;
+            height: fit-content;
+            width: fit-content;
+        }
+        </style>
+        
+</head>
+<body>
+    <h1 id="todooo">TODO LIST</h1>
+    <input type="text" name="todo" id="todo">
+    <button onclick="createItem()">set or smth</button>
+    <button onclick="localStorage.clear(); window.location.reload()">Clear all tasks</button>
+    <div id="taskdiv"></div>
+    <script src="script.js"></script>
+</body>
+</html>
