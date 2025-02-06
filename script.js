@@ -52,6 +52,9 @@ function createItem() {
 
 function loadItem() {
 
+    const todo = document.getElementById("todo");
+  
+  todo.value = "" ;
 
 
     const tasksContainer = document.getElementById('taskdiv');
