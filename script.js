@@ -19,7 +19,9 @@ function loadItem() {
     tasks.forEach(task => {
         const taskElement = document.createElement('div');
         const tasksText = `<div id="atask">TODO
-       <h2>${task.desc}</h2></div>`;
+       <h2>${task.desc}</h2>
+       <br>
+       </div>`;
        taskElement.innerHTML = tasksText;
         tasksContainer.appendChild(taskElement);
     });
